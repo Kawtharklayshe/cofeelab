@@ -1,0 +1,416 @@
+/* [Master Stylesheet] */
+/*
+Template Name: Alazea - Gardening &amp; Landscaping HTML Template
+Template Author: Colorlib
+Template Author URI: http://colorlib.com
+Text Domain: Alazea, Gardening & Landscaping
+Version: - v1.0
+*/
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800");
+/* :: 2.0 Import All CSS */
+@import '../css/bootstrap.min.css';
+@import '../css/classy-nav.css';
+@import '../css/owl.carousel.min.css';
+@import '../css/animate.css';
+@import '../css/magnific-popup.css';
+@import '../css/font-awesome.min.css';
+@import '../css/elegant-icon.css';
+/* :: 3.0 Base CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  color: #707070;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #303030;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+a,
+a:hover,
+a:focus {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: 0 solid transparent;
+  color: #303030;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* :: 3.1.0 Spacing */
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-70 {
+  margin-top: 70px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.ml-50 {
+  margin-left: 50px !important;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.mr-30 {
+  margin-right: 30px !important;
+}
+
+.mr-50 {
+  margin-right: 50px !important;
+}
+
+/* :: 3.2.0 Height */
+.height-400 {
+  height: 400px;
+}
+
+.height-500 {
+  height: 500px;
+}
+
+.height-600 {
+  height: 600px;
+}
+
+.height-700 {
+  height: 700px;
+}
+
+.height-800 {
+  height: 800px;
+}
+
+/* :: 3.3.0 Section Padding */
+.section-padding-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-padding-100-0 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+
+.pages-area .container {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, minmax(300px,1fr));  */
+	grid-template-columns: repeat(3, 1fr); 
+	grid-gap: 30px;
+}
+@media(max-width: 767px) {
+  .pages-area .container {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+}
+.pages-area .box {
+  padding: 0 !important;
+}
+
+.pages-area .box::before {
+  content: "";
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pages-area .box:hover::before {
+  opacity: 1;
+}
+
+.pages-area .box img {
+  width: 100%;
+}
+
+.pages-area .box h4 {
+  margin: 0 !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(145, 137, 122, 0.7);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.pages-area .box:hover h4 {
+  bottom: 15px;
+}
+.video {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  border: none;
+}
+.footer .upper {
+  background-color: #eee;
+}
+
+.footer .logo {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.footer .lower {
+  background-color: #071d49;
+}
+
+.footer .lower a,
+.footer .lower .central h3 {
+  text-decoration: underline !important;
+}
+
+.footer .lower a:hover {
+  font-size: inherit !important;
+  color: white !important;
+}
+
+.footer .lower .b2b a.btn {
+  border-radius: 0 !important;
+  text-decoration: none !important;
+  background-color: #6c757d !important;
+}
+
+.footer .lower .b2b img {
+  max-width: 60%;
+}
+
+.footer .lower .euro img {
+  max-width: 40%;
+}
+.footer .lower .terms a {
+  font-size: 14px !important;
+}
+
+
+.cards .my-card h3 {
+  font-size: 16px !important;
+  color: #00AEEF !important;
+}
+.cards .my-card p {
+  font-size: 13px !important;
+}
+.cards .my-card img {
+  max-width: 100%;
+  transition: .4s;
+  transform: scale(0.75);
+}
+.cards .my-card img:hover {
+  transform: scale(0.85);
+}
+
+.franchise-pricing .pricing {
+  height: 90%;
+}
+
+/* .faqs .accordion {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+/* .faqs .accordion-item {
+  margin-bottom: 10px;
+} */
+
+/* .faqs .accordion-title {
+  background-color: #f4f4f4;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faqs .accordion-content {
+  display: none;
+  transform: translateY(-20px);
+  transition: .4s;
+  padding: 10px;
+}
+.faqs .accordion-content.appear {
+  transform: translateY(0);
+
+} */
+
+
+.faqs {
+  background-color: #EFEFEF !important;
+}
+.accordion {
+  border-top: 0.4px solid #ccc;
+  border-bottom: 0.4px solid #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse:collapse;
+}
+
+/* .accordion-item {
+  margin-bottom: 10px;
+} */
+
+.accordion-title {
+  border-left: 0.4px solid #ccc;
+  border-right: 0.4px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.accordion-title h5 {
+  margin-bottom: 0 !important;
+}
+
+.accordion-content {
+  display: flex;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.contact-form input, 
+.contact-form textarea {
+  border: 1px solid #071d49 !important;
+}
+
+/* start main title */
+.main-title h3 {
+  position: relative;
+  margin-bottom: 0;
+  z-index: 2;
+  color:  rgb(7, 29, 73);
+  width: fit-content;
+}
+.main-title h3::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #00AEEF;
+  transform: skew(-50deg);
+  
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+  z-index: 1;
+  background-color: #071d49;
+  min-width: 600px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/*# sourceMappingURL=style.css.map */
