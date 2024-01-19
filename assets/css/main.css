@@ -43,7 +43,50 @@
     
 --------------------------------------------------------------------------*/
 
+@media (max-width: 767px) {
+    .centered-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    }
+}
+.slider__item {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider__item {
+    max-height: 100vh;
+    height: 100vh;
+    object-fit: contain;
+    width: 100%;
+    transform: translateY(75px);
+    text-align: center;
+}
 
+
+  /* Use media queries to adjust the hero image for different screen sizes */
+  @media (min-width: 481px ) and ( max-width: 768px) {
+    .slider__item {
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider__item {
+      height: 250px;
+    }
+  }
+  
+
+@media (max-width: 767px) {
+    .slider__item {
+        background-position: center center;
+    }
+}
 
 @media (min-width: 768px) {
     #mobileNav {
@@ -4523,10 +4566,6 @@ mark, .mark {
     background-size: cover;
 }
 
-.slider__item {
-    height: 65vh;
-    text-align: center;
-}
 
 .slider__item:after {
     /* content: "";

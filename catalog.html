@@ -20,6 +20,11 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="assets/css/style.css" />
+		<style>
+			.grid-item {
+    min-height: 300px; /* Set a minimum height for each item */
+}
+		</style>
 	</head>
 	
 	<body>
@@ -166,41 +171,35 @@
 							<div id="loadingText">Loading...</div></div>
 				<section class="md-section">
 							
-							<div class="grid__inner" id="projectGrid" style="position: relative; height: 607.141px;">
+							<div class="row mycard" id="projectGrid" style="position: relative">
 								<div class="grid-sizer"></div>
-								<div class="grid-item marketing">
-									<div class="grid-item__inner">
-										<div class="grid-item__content-wrapper">
-											
-											<!-- post-02 -->
-											<div class="post-02">
-												<div class="post-02__media"><a href="project-detail.html"><img src="https://coffeelab.gr/wp-content/uploads/2023/01/Boutique-Chocolat-blog-photo-1024x1017.jpg" alt=""/></a></div>
-												<div class="post-02__body">
-													<h2 class="post-02__title"><a href="project-detail.html">Boutique Chocolat from Coffee Lab’s “Choco Lab”!</a></h2>
-													<div class="post-02__department">By support / 26 January 2023</div>
-												</div>
-											</div><!-- End / post-02 -->
-											
-										</div>
-									</div>
-								</div>
-								<div class="grid-item marketing">
-									<div class="grid-item__inner">
-										<div class="grid-item__content-wrapper">
-											
-											<!-- post-02 -->
-											<div class="post-02">
-												<div class="post-02__media"><a href="project-detail.html"><img src="https://coffeelab.gr/wp-content/uploads/2023/01/Boutique-Chocolat-blog-photo-1024x1017.jpg" alt=""/></a></div>
-												<div class="post-02__body">
-													<h2 class="post-02__title"><a href="project-detail.html">Boutique Chocolat from Coffee Lab’s “Choco Lab”!</a></h2>
-													<div class="post-02__department">By support / 26 January 2023</div>
-												</div>
-											</div><!-- End / post-02 -->
-											
-										</div>
-									</div>
-								</div>
 								
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+											<div class="post-02">
+												<div class="post-02__media"><a href="project-detail.html"><img src="assets/img/image-01.jpg" alt=""/></a></div>
+												<div class="post-02__body">
+													<h2 class="post-02__title"><a href="project-detail.html">Boutique Chocolat from Coffee Lab’s “Choco Lab”!</a></h2>
+													<div class="post-02__department">By support / 26 January 2023</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper">
+											<div class="post-02">
+												<div class="post-02__media"><a href="project-detail.html"><img src="assets/img/image-01.jpg" alt=""/></a></div>
+												<div class="post-02__body">
+													<h2 class="post-02__title"><a href="project-detail.html">Boutique Chocolat from Coffee Lab’s “Choco Lab”!</a></h2>
+													<div class="post-02__department">By support / 26 January 2023</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					
@@ -301,7 +300,7 @@
 					'MerchantId': 'test',
 					
 				};
-		
+				
 				// Fetch categories from the API with headers
 				$.ajax({
 					url: 'http://62.171.156.160:2072/api/V1/POS_Website/POS_Item/Categories',
@@ -334,7 +333,7 @@
 								$('#loadingSpinner').hide();
                                 console.log('Filtered Data:', filteredData.data.items);
 								console.log('Filtered Data:', $('#projectGrid').empty());
-								var gridContainer = $('.grid__inner');
+								var gridContainer = $('.mycard');
                                 // Display or manipulate the filtered data as needed
                                 // For example, you can update the contents of the #filteredData div
 								 gridContainer.empty();
@@ -363,6 +362,7 @@ filteredData.data.items.forEach(function (item, index) {
 	`;
 	// Append the grid item to the grid container
 	gridContainer.find('.row:last').append(gridItem);
+
 
 
 });
