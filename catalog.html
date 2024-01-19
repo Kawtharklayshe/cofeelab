@@ -303,7 +303,7 @@
 				
 				// Fetch categories from the API with headers
 				$.ajax({
-					url: 'http://62.171.156.160:2072/api/V1/POS_Website/POS_Item/Categories',
+					url: 'https://62.171.156.160:2072/api/V1/POS_Website/POS_Item/Categories',
 					method: 'GET',
 					headers: headers,
 					dataType: 'json',
@@ -323,7 +323,7 @@
 						$('#projectGrid').empty();
                         // Fetch data based on the selected filter
                         $.ajax({
-                            url: 'http://62.171.156.160:2072/api/V1/POS_Website/POS_Item',
+                            url: 'https://62.171.156.160:2072/api/V1/POS_Website/POS_Item',
                             method: 'GET',
                             headers: headers,
                             data: { CategoryId: selectedFilter.substring(1) }, // Remove the dot from the filter
