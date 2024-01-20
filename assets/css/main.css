@@ -359,7 +359,7 @@ div#projectGrid {
             z-index: 10;
             border-radius: 50%;
             box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
-            background-color: $white-color;
+            background-color: #fff;
             animation: zoom 2000ms infinite ease;
         }
         
@@ -1330,9 +1330,6 @@ textarea {
     height: auto !important;
 }
 
- {
-    /* no-gutters Class Rules */
-}
 
 .list-style-none {
     list-style: none;
@@ -4056,7 +4053,8 @@ mark, .mark {
         position: static;
     }
 }
-@charset "UTF-8";
+
+/* @charset "UTF-8"; */
 
 
 
@@ -4069,7 +4067,7 @@ mark, .mark {
     width: 100%;
     background-color: white;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
-    transition: background ease .3s;
+    /* transition: background ease .3s; */
 }
 
 .header .container {
