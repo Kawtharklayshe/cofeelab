@@ -1619,6 +1619,7 @@ mark, .mark {
 
 .owl-carousel .owl-item img {
     width: 100%;
+    height: 300px;
 }
 
 .owl-nav, .owl-dots {
