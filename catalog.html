@@ -20,11 +20,19 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="assets/css/style.css" />
+		
 		<style>
-			.grid-item {
-    min-height: 300px; /* Set a minimum height for each item */
-}
+			.grid-container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		
+			.grid-item__inner {
+				flex: 1;
+				margin: 10px; /* Optional: Add margin for spacing between items */
+			}
 		</style>
+		
 	</head>
 	
 	<body>
@@ -155,21 +163,12 @@
 			<div class="md-content">
 				
 
-				<!-- Section -->
-				
-					<div class="container">
-						<div class="grid-css grid-css--masonry" data-col-lg="3" data-col-md="2" data-col-sm="2" data-col-xs="1" data-gap="30">
-							<div class="filter">
-								<ul class="filter__list" id="filterList">
-									<li><a href="#" data-filter="*">All</a></li>
-								</ul>
-							</div>
-							<div id="loadingSpinner" style="display: none;"> 
-								<div id="loadingLogo">
-								<img src="./assets/imgs/logo.png" alt="Logo">
-							</div>
-							<div id="loadingText">Loading...</div></div>
-				<section class="md-section">
+				<div class="container" style="margin-top: 20px;">
+						
+					<!-- layout-blog sidebar-left -->
+					<div class="layout-blog sidebar-left">
+						<div class="layout-blog__content">
+							
 							
 							<div class="row mycard" id="projectGrid" style="position: relative">
 								<div class="grid-sizer"></div>
@@ -201,13 +200,29 @@
 									</div>
 								</div>
 							</div>
+						
 						</div>
+						<aside class="layout-blog__sidebar">
+							<section class="widget-text__widget widget-text__style-02 widget" >
+								<h3 class="widget-title filter">Filters</h3>
+								<div class="widget-text__content filter__list">
+									<ul id="filterList">
+										<li><a href="#" data-filter="*">All</a></li>
+									
+									</ul>
+								</div>
+							</section>	
+								<!--  -->
+								<div>
+									
+								
+							
+								</div><!-- End /  -->
+								
+						</aside>
+					</div><!-- End / layout-blog sidebar-left -->
 					
-					</div>
-				</section>
-				<!-- End / Section -->
-				
-			</div>
+				</div>
 			<!-- End / Content-->
 			
 			<!-- footer -->
@@ -312,9 +327,15 @@
 						// Handle the API response
 						if (data.data && data.data.items) {
 							// Iterate through the categories and dynamically add filter options
-							data.data.items.forEach(function (category) {
-								$('#filterList').append('<li><a href="#" data-filter=".' + category.id + '">' + category.name + '</a></li>');
-							});
+							var filterList = $('#filterList');
+							console.log(filterList)
+							console.log(data.data.items)
+            // Iterate through the categories and dynamically add filter options
+            data.data.items.forEach(function (category) {
+                filterList.append('<li><a href="#" data-filter=".' + category.id + '">' + category.name + '</a></li>');
+            });
+			console.log(filterList)
+
 							// Attach click event handler to filter links
 							$('#filterList a').on('click', function (event) {
                         event.preventDefault();
@@ -353,7 +374,7 @@ filteredData.data.items.forEach(function (item, index) {
                                 <div class="post-02__media"><a href="project-detail.html"><img src="${item.image}" alt=""/></a></div>
                                 <div class="post-02__body">
                                     <h2 class="post-02__title"><a href="project-detail.html">${item.name}</a></h2>
-                                    <div class="post-02__department">${item.description}</div>
+                                    <div class="post-02__department">${getFirstFiveWords(item.description)}</div>
                                 </div>
                             </div>
                         </div>
@@ -381,6 +402,18 @@ filteredData.data.items.forEach(function (item, index) {
 					}
 				});
 			});
+
+
+			function getFirstFiveWords(text) {
+				console.log(text)
+    // Split the text into an array of words
+    const words = text.split(' ');
+
+    // Take the first five words and join them back into a string
+    const firstFiveWords = words.slice(0, 10).join(' ');
+
+    return firstFiveWords;
+}
 		</script>
 	</body>
 </html>

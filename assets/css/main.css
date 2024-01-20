@@ -3184,6 +3184,7 @@ mark, .mark {
 }
 
 .post-02__body {
+    height: 175px;
     padding: 20px 30px;
     border: 1px solid #ebebeb;
     border-top: none;
@@ -4747,7 +4748,7 @@ mark, .mark {
 
 
 .filter__list {
-    text-align: center;
+    text-align: start;
     list-style: none;
     padding: 0;
     margin-bottom: 50px;
