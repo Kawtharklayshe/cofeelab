@@ -63,10 +63,12 @@
       height: 500px; } }
   @media only screen and (max-width: 767px) {
     .single-hero-post {
-      height: 550px; } }
+        height: 350px;
+        margin-top: 21%;} }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .single-hero-post {
-      height: 400px; }
+      height: 400px; 
+      margin-top: 0;}
       .slide-img.bg-img {
         top: 25% !important;
     } }
