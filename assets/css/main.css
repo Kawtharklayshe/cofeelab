@@ -60,7 +60,7 @@
 }
 .slider__item {
     max-height: 60vh;
-    height: 60vh;
+    height: 50vh;
     object-fit: contain;
     width: 100%;
     transform: translateY(55px);
@@ -78,6 +78,7 @@
   @media (max-width: 480px) {
     .slider__item {
       /* height: 400px; */
+      background-size: 205% 100% !important;
     }
   }
   
