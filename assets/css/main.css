@@ -43,6 +43,141 @@
     
 --------------------------------------------------------------------------*/
 
+/* :: 5.0 Hero Slides Area */
+.hero-area,
+.hero-post-slides {
+  position: relative;
+  z-index: 1; }
+
+.single-hero-post {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-post {
+      height: 690px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-post {
+      height: 500px; } }
+  @media only screen and (max-width: 767px) {
+    .single-hero-post {
+      height: 550px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-hero-post {
+      height: 400px; }
+      .slide-img.bg-img {
+        top: 25% !important;
+    } }
+  .single-hero-post .slide-img {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0; }
+  .single-hero-post .hero-slides-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 132px; }
+    @media only screen and (max-width: 767px) {
+      .single-hero-post .hero-slides-content {
+        margin-top: 112px; } }
+    .single-hero-post .hero-slides-content h2 {
+      font-size: 45px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .single-hero-post .hero-slides-content h2 {
+          font-size: 36px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-post .hero-slides-content h2 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-post .hero-slides-content h2 {
+          font-size: 24px; } }
+    .single-hero-post .hero-slides-content p {
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 50px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-post .hero-slides-content p {
+          font-size: 18px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-post .hero-slides-content p {
+          font-size: 16px; } }
+    @media only screen and (max-width: 767px) {
+      .single-hero-post .hero-slides-content a {
+        min-width: 125px;
+        padding: 0 10px; } }
+
+.hero-post-slides .owl-item.center .single-hero-post .slide-img {
+  -webkit-animation: slide 24s linear infinite;
+  animation: slide 24s linear infinite; }
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+/* :: 6.0 Subscribe Newsletter Area */
+.subscribe-newsletter-area {
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
+  background-size: cover;
+  background-position: top right; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .subscribe-newsletter-area .subscribe-form {
+      margin-top: 50px; } }
+  @media only screen and (max-width: 767px) {
+    .subscribe-newsletter-area .subscribe-form {
+      margin-top: 50px; } }
+  .subscribe-newsletter-area .subscribe-form form {
+    position: relative;
+    z-index: 1; }
+    .subscribe-newsletter-area .subscribe-form form input {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      width: 100%;
+      height: 46px;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border: none; }
+      .subscribe-newsletter-area .subscribe-form form input:focus {
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15); }
+    .subscribe-newsletter-area .subscribe-form form button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      border: none;
+      border-radius: 0 2px 2px 0; }
+  .subscribe-newsletter-area .subscribe-side-thumb .first-img {
+    position: absolute;
+    top: -30px;
+    left: 5%;
+    z-index: 10; }
+
 @media (max-width: 767px) {
     .centered-image {
         display: block;
