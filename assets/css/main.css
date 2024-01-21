@@ -4999,6 +4999,10 @@ mark, .mark {
     }
 }
 
+.max-width {
+			
+    max-width: 100% !important;
+}
 .consult-postDetail__meta {
     list-style: none;
     padding: 0;

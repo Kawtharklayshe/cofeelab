@@ -296,7 +296,7 @@ img {
   font-size: 13px !important;
 }
 .cards .my-card img {
-  max-width: 60%;
+  max-width: 48%;
   transition: .4s;
   transform: scale(0.75);
 }
