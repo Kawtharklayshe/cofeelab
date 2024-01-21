@@ -42,7 +42,18 @@
 
     
 --------------------------------------------------------------------------*/
+a.text-white.px-2 {
+    font-size: 12px;
+}
+a.d-block.text-white.h5.pb-3 {
+    font-size: 16px;
+    font-weight: 500;
+}
 
+h3.text-white.pb-4 {
+    font-size: 16px;
+    font-weight: 500;
+}
 /* :: 5.0 Hero Slides Area */
 .hero-area,
 .hero-post-slides {

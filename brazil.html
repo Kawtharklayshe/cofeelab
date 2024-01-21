@@ -202,6 +202,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container pt-5 overflow-hidden">
             <div class="title">
                 <h4 class="py-4 mb-5 border-bottom border-dark text-center">About your grower</h4>
@@ -221,6 +222,22 @@
                 </div>
             </div>
         </div>
+         
+        <div class="container pt-5 overflow-hidden">
+          <div class="title">
+              <h4 class="py-4 mb-5 border-bottom border-dark text-center"></h4>
+          </div>
+          <div class="shape row">
+              <div class="col-12 col-md-6">
+                  <div>
+                      <h5>Production characteristics</h5>
+                      <p><span style="color: #00aeef;">Sakia:</span> 320 <span style="color: #00aeef;">Coffee variety:</span> ACAIÁ <span style="color: #00aeef;">Edit:</span> Natural <span style="color: #00aeef;">Altitude: </span>935 meters <span style="color: #00aeef;">Σοδιά: </span> 2018/2019<span style="color: #00aeef;">Warehouse:</span>   Expocaccer Cooperative of Coffee Makers</p>
+                  </div>
+                 
+              </div>
+              
+          </div>
+      </div>
         <div class="container pt-5 overflow-hidden">
             <div class="title">
                 <h4 class="pt-5 text-center">About Cerrado Mineiro</h4>
@@ -235,7 +252,7 @@
                 </div>
             </div>
             <div class="pt-5">
-                <h5>ur official production process</h5>
+                <h5>Our official production process</h5>
                 <p>The production process of the unique origin of coffees emphasizes and evaluates the characteristics of our <span style="color: #00aeef;">terroir</span> . Only coffees grown within the officially restricted area that follow the rules of the production process set by our Board of Regulators may have the stamp of guaranteed origin and quality of the Cerrado Mineiro-D.O area.</p>
                 <div class="boxes mt-5">
                     <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
@@ -280,18 +297,19 @@
                 <div class="downloads justify-content-around row pb-5">
                     <div class=" download p-3 d-flex align-items-center text-white col-md-5" style="background-color: #00aeef;">
                         <i class="fas fa-certificate fa-4x mr-3 text-white"></i>
-                        <div>
+                        <div role="button" onclick="downloadFile('https://coffeelab.gr/wp-content/uploads/2019/03/Certificado_24118_en-1.pdf')" style="cursor: pointer;">
                             <h5 class="mb-3 text-white">Download</h5>
                             <p class="text-white" style="font-size: 14px;">
                                 Origin and Quality Certificate <br>
                                 Guaranteed Origin and Quality <br>
                                 Cerrado Mineiro Region D.O.
                             </p>
+                           
                         </div>
                     </div>
                     <div class=" download p-3 d-flex align-items-center text-white col-md-5" style="background-color: #00aeef;">
                         <i class="fas fa-file-alt fa-4x mr-3 text-white"></i>
-                        <div>
+                        <div role="button" onclick="downloadFile('https://coffeelab.gr/wp-content/uploads/2020/03/Laudo_1420_en.pdf')" style="cursor: pointer;">
                             <h5 class="mb-3 text-white">Download</h5>
                             <p class="text-white" style="font-size: 14px;">
                                 Quality Report <br>
@@ -656,5 +674,14 @@
     ></script>
     <!-- App-->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      function downloadFile(text) {
+          // You can replace 'yourfile.pdf' with the actual filename and extension
+          var fileUrl = text;
+  
+          // Open a new window and trigger the download
+          window.open(fileUrl, '_blank');
+      }
+  </script>
   </body>
 </html>

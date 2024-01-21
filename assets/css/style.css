@@ -55,7 +55,7 @@ a:focus {
   outline: 0 solid transparent;
   color: #303030;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 ul,
@@ -272,10 +272,16 @@ img {
 
 .footer .lower .b2b img {
   max-width: 60%;
+  margin-top: 20%;
 }
-
+@media (max-width: 731px) {
+  .footer .lower .b2b img {
+    max-width: 80%;
+    margin-top: 0 ;
+  }
+}
 .footer .lower .euro img {
-  max-width: 40%;
+  max-width: 60%;
 }
 .footer .lower .terms a {
   font-size: 14px !important;
@@ -290,7 +296,7 @@ img {
   font-size: 13px !important;
 }
 .cards .my-card img {
-  max-width: 100%;
+  max-width: 60%;
   transition: .4s;
   transform: scale(0.75);
 }

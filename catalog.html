@@ -321,7 +321,56 @@
 					'MerchantId': 'test',
 					
 				};
-				
+				$.ajax({
+                            url: 'https://clabposwebsite.meta-itech.com/api/V1/POS_Website/POS_Item',
+                            method: 'GET',
+                            headers: headers,
+                            data: { CategoryId:null }, // Remove the dot from the filter
+                            dataType: 'json',
+                            success: function (filteredData) {
+                                // Handle the filtered data
+								$('#loadingSpinner').hide();
+                            
+								var gridContainer = $('.mycard');
+                                // Display or manipulate the filtered data as needed
+                                // For example, you can update the contents of the #filteredData div
+								 gridContainer.empty();
+								$('#projectGrid').append('<div class="grid-sizer"></div>');
+								gridContainer.append('<div class="row"></div>');
+// Iterate through the filtered data and create grid items
+filteredData.data.items.forEach(function (item, index) {
+	
+			
+
+	var gridItem = `
+	
+	<div class="col-12 col-md-6 col-xl-4">
+                    <div class="grid-item__inner">
+                        <div class="grid-item__content-wrapper">
+                            <div class="post-02">
+                                <div class="post-02__media"><a href="project-detail.html"><img src="${item.image}" alt=""/></a></div>
+                                <div class="post-02__body">
+                                    <h2 class="post-02__title"><a href="project-detail.html">${item.name}</a></h2>
+                                    <div class="post-02__department">${getFirstFiveWords(item.description)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	`;
+	// Append the grid item to the grid container
+	gridContainer.find('.row:last').append(gridItem);
+
+
+
+});
+
+
+                            },
+                            error: function (error) {
+                                console.error('Error fetching filtered data:', error);
+                            }
+                        });
 				// Fetch categories from the API with headers
 				$.ajax({
 					url: 'https://clabposwebsite.meta-itech.com/api/V1/POS_Website/POS_Item/Categories',
@@ -334,13 +383,12 @@
 						if (data.data && data.data.items) {
 							// Iterate through the categories and dynamically add filter options
 							var filterList = $('#filterList');
-							console.log(filterList)
-							console.log(data.data.items)
+						
             // Iterate through the categories and dynamically add filter options
             data.data.items.forEach(function (category) {
                 filterList.append('<li><a href="#" data-filter=".' + category.id + '">' + category.name + '</a></li>');
             });
-			console.log(filterList)
+			
 
 							// Attach click event handler to filter links
 							$('#filterList a').on('click', function (event) {
@@ -358,18 +406,18 @@
                             success: function (filteredData) {
                                 // Handle the filtered data
 								$('#loadingSpinner').hide();
-                                console.log('Filtered Data:', filteredData.data.items);
-								console.log('Filtered Data:', $('#projectGrid').empty());
+                              
 								var gridContainer = $('.mycard');
                                 // Display or manipulate the filtered data as needed
                                 // For example, you can update the contents of the #filteredData div
 								 gridContainer.empty();
 								$('#projectGrid').append('<div class="grid-sizer"></div>');
+								gridContainer.append('<div class="row"></div>');
 // Iterate through the filtered data and create grid items
 filteredData.data.items.forEach(function (item, index) {
-	if (index % 3 === 0) {
-                gridContainer.append('<div class="row"></div>');
-            }
+	// if (index % 3 === 0) {
+    //             gridContainer.append('<div class="row"></div>');
+    //         }
 
 	var gridItem = `
 	
