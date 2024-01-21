@@ -135,7 +135,12 @@
 					<ul class="consult-menu" style="background-color: #071d49;">
 						<li class="current-menu-item"><a href="index.html">Home</a>
 						</li>
-						<li><a href="about.html">about us</a>
+						<li class="menu-item-has-children"><a href="about.html">about us</a>
+							<ul class="sub-menu">
+								<li><a href="our-prouduction.html">our-production </a>
+								</li>
+								
+							</ul>
 						</li>
 						<li class="menu-item-has-children"><a href="#">our coffee</a>
 							<ul class="sub-menu">
@@ -885,12 +890,16 @@ let img = document.getElementById("myImg");
 let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
 
-img.onclick = function () {
-	console.log("tes")
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
+var handleImgClick = function () {
+        console.log("test");
+        modal.style.display = "block";
+  
+    };
+
+    // Add click event listener for the image
+    img.addEventListener("click", handleImgClick);
+    // Also add touchstart event listener for mobile
+    img.addEventListener("touchstart", handleImgClick);
 
 
 
