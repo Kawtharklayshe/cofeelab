@@ -67,6 +67,8 @@
               </li>
               <li class="menu-item-has-children"><a href="about.html">about us</a>
                 <ul class="sub-menu">
+                  <li><a href="about.html">About us Page</a>
+									</li>
                   <li><a href="prouduction.html">our production </a>
                   </li>
                   
@@ -76,11 +78,11 @@
                 <ul class="sub-menu">
                   <li><a href="brazil.html">Coffee lab farms</a>
                   </li>
-                  <li><a href="kenya.html">Brazil</a>
+                  <li><a href="brazil.html">Brazil</a>
                   </li>
-                  <li><a href="ethiopia.html">Kenya</a>
+                  <li><a href="kenya.html">Kenya</a>
                   </li>
-                  <li><a href="guatemala.html">Ethiopia</a>
+                  <li><a href="ethiopia.html">Ethiopia</a>
                   </li>
                   <li><a href="guatemala.html">Guatemala</a>
                   </li>
@@ -657,7 +659,7 @@
 						<div class="euro col-12 col-md-7 col-xl-4 mb-4 d-flex align-items-center">
 							<img src="./assets/imgs/EURO_AWARD-1-1-2048x2048.png" alt="EURO AWARD image" class=" px-3">
 							<p class="h5" style="
-							font-size: 16px;
+							font-size: 14px;
 							font-weight: 500;
 						">EUROPEAN COFFEE AWARDS 2023
 								COFFEE LAB
@@ -689,64 +691,24 @@
 			</div>
 		</footer>
     </div>
-    <!-- Vendors-->
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery/jquery.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/isotope-layout/isotope.pkgd.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.countdown/jquery.countdown.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.countTo/jquery.countTo.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.countUp/jquery.countup.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/masonry-layout/masonry.pkgd.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/owl.carousel/owl.carousel.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/menu/menu.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/vendors/smoothscroll/SmoothScroll.min.js"
-    ></script>
+
+    <script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.countTo/jquery.countTo.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="assets/vendors/owl.carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/menu/menu.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/smoothscroll/SmoothScroll.min.js"></script>
+    <!-- <script src="assets/js/plugins/plugins.js"></script> -->
     <!-- App-->
+    <script src="assets/js/active.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
       function downloadFile(text) {
@@ -757,45 +719,12 @@
           window.open(fileUrl, '_blank');
       }
  
-		// Get the modal
-	
-
-
-// 		let modal = document.getElementById("myModal");
-
-// // Get the image and insert it inside the modal - use its "alt" text as a caption
-// let img = document.getElementById("myImg");
-// let modalImg = document.getElementById("img01");
-// let captionText = document.getElementById("caption");
-
-// var handleImgClick = function () {
-//         console.log("test");
-//         modal.style.display = "block";
-  
-//     };
-
-//     // Add click event listener for the image
-//     img.addEventListener("click", handleImgClick);
-//     // Also add touchstart event listener for mobile
-//     img.addEventListener("touchstart", handleImgClick);
-
-
-
-
-// // Get the <span> element that closes the modal
-// let span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
 // Close the modal when the user clicks outside of the modal content
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 const modal = document.querySelector(".my-modal");
   const buttons = document.querySelectorAll(".my-modal .content button");
   
