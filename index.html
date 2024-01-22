@@ -966,11 +966,12 @@
 // };
 
 // Close the modal when the user clicks outside of the modal content
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+	
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 const modal = document.querySelector(".my-modal");
   const buttons = document.querySelectorAll(".my-modal .content button");
   

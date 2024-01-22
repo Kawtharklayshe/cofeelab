@@ -277,33 +277,55 @@
 	/**
 	 * Menu
 	 */
-	// $('.consult-nav').dropdownMenu({
-	// 	menuClass: 'consult-menu',
-	// 	breakpoint: 992,
-	// 	toggleClass: 'active',
-	// 	classButtonToggle: 'navbar-toggle',
-	// 	subMenu: {
-	// 		class: 'sub-menu',
-	// 		parentClass: 'menu-item-has-children',
-	// 		toggleClass: 'active'
-	// 	}
-	// });
+	$('.consult-nav').dropdownMenu({
+		menuClass: 'consult-menu',
+		breakpoint: 992,
+		toggleClass: 'active',
+		classButtonToggle: 'navbar-toggle',
+		subMenu: {
+			class: 'sub-menu',
+			parentClass: 'menu-item-has-children',
+			toggleClass: 'active'
+		}
+	});
 	
 
 	const menu = document.querySelector('.consult-nav');
-const dropdown = document.querySelector('.consult-menu');
-
-menu.addEventListener('click', function() {
-  if (window.innerWidth < 992) {
-    dropdown.classList.toggle('active');
-  }
-});
-
-window.addEventListener('resize', function() {
-  if (window.innerWidth >= 992) {
-    dropdown.classList.remove('active');
-  }
-});
+	const dropdown = document.querySelector('.consult-menu');
+	const subMenuClass = 'sub-menu';
+	const parentClass = 'menu-item-has-children';
+	const toggleClass = 'active';
+	
+	menu.addEventListener('click', function (event) {
+	  if (window.innerWidth < 992) {
+		const target = event.target;
+	
+		// Check if the clicked element has the parentClass
+		if (target.classList.contains(parentClass)) {
+		  // Toggle the submenu for the clicked element
+		  const subMenu = target.querySelector(`.${subMenuClass}`);
+		  if (subMenu) {
+			subMenu.classList.toggle(toggleClass);
+		  }
+		}
+	
+		// Toggle the main dropdown
+		dropdown.classList.toggle('active');
+	  }
+	});
+	
+	window.addEventListener('resize', function () {
+	  if (window.innerWidth >= 992) {
+		dropdown.classList.remove('active');
+	
+		// Remove active class from all submenus when resizing
+		const subMenus = document.querySelectorAll(`.${subMenuClass}`);
+		subMenus.forEach((subMenu) => {
+		  subMenu.classList.remove(toggleClass);
+		});
+	  }
+	});
+	
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > 100) {
 			$('.header').addClass('shrink');
