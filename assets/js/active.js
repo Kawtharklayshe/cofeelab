@@ -187,7 +187,7 @@
 
     // :: 14.0 wow Active Code
     if (browserWindow.width() > 767) {
-        new WOW().init();
+        // new WOW().init();
     }
 
 })(jQuery);

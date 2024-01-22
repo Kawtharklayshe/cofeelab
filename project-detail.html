@@ -23,80 +23,48 @@
 	
 	<body>
 		<div class="page-wrap">
-			
-			<!-- header -->
-			<header class="header">
-				<div class="container">
-					<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></div>
-					<div class="header__toogleGroup">
-						<div class="header__chooseLanguage">
-										
-										<!-- dropdown -->
-										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<div class="dropdown__content" data-position="right">
-												<ul class="list-style-none">
-													<li><a href="#">EN</a></li>
-													<li><a href="#">DE</a></li>
-													<li><a href="#">VI</a></li>
-												</ul>
-											</div>
-										</div><!-- End / dropdown -->
-										
-						</div>
-						<div class="search-form">
-							<div class="search-form__toggle"><i class="ti-search"></i></div>
-							<div class="search-form__form">
-												
-												<!-- form-search -->
-												<div class="form-search">
-													<form>
-														<input class="form-control" type="text" placeholder="Hit enter to search or ESC to close"/>
-													</form>
-												</div><!-- End / form-search -->
-												
-							</div>
-						</div>
-					</div>
+			<header class="header header__style-02" id="mobileNav" style="background-color: #071d49;">
+				<div class="container" >
+					<div class="header__logo"><a href="index.html"><img src="assets/logo.png" width="75" height="88" alt="CofeeLab Logo"/></a></div>
+					
 					
 					<!-- consult-nav -->
 					<nav class="consult-nav">
 						
 						<!-- consult-menu -->
-						<ul class="consult-menu">
-							<li><a href="index.html">Home</a>
+						<ul class="consult-menu" style="background-color: #071d49;">
+							<li class="current-menu-item"><a href="index.html">Home</a>
 							</li>
 							<li class="menu-item-has-children"><a href="about.html">about us</a>
 								<ul class="sub-menu">
-									<li><a href="our-prouduction.html">our-production </a>
+									<li><a href="prouduction.html">our production </a>
 									</li>
 									
 								</ul>
 							</li>
-							<li class="menu-item-has-children"><a href="#">page</a>
+							<li class="menu-item-has-children"><a href="#">our coffee</a>
 								<ul class="sub-menu">
-									<li><a href="comming-soon.html">Comming Soon</a>
+									<li><a href="brazil.html">Coffee lab farms</a>
 									</li>
-									<li><a href="404.html">404</a>
+									<li><a href="kenya.html">Brazil</a>
 									</li>
-									<li><a href="typography.html">Typography</a>
+									<li><a href="ethiopia.html">Kenya</a>
+									</li>
+									<li><a href="guatemala.html">Ethiopia</a>
+									</li>
+									<li><a href="guatemala.html">Guatemala</a>
 									</li>
 								</ul>
 							</li>
-							<li><a href="service.html">services</a>
+							<li><a href="catalog.html">catalog</a>
 							</li>
-							<li class="menu-item-has-children current-menu-item"><a href="project.html">project</a>
-								<ul class="sub-menu">
-									<li><a href="project-detail.html">Project detail</a>
-									</li>
-								</ul>
+							<li><a href="retail.html">retail</a>
 							</li>
-							<li class="menu-item-has-children"><a href="blog.html">blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog-detail.html">Blog detail</a>
-									</li>
-								</ul>
+						
+							
+							<li><a href="franchise.html">franchise</a>
 							</li>
-							<li><a href="contact.html">contact</a>
+							<li><a href="blog.html">blog</a>
 							</li>
 						</ul><!-- consult-menu -->
 						
@@ -104,8 +72,85 @@
 					</nav><!-- End / consult-nav -->
 					
 				</div>
-			</header><!-- End / header -->
-			
+			</header>
+			<div id="DesktopNav"
+				class="header"
+				style="background-color: #071d49;"
+		
+			  >
+				<a href="index.html" class="d-block logo px-3"
+				  ><img width="75" height="88" src="assets/img/logo.png"
+				/></a>
+				<div
+				  class="nav flex-grow-1 align-self-stretch pages d-flex flex-column"
+				>
+				  <div
+					class="upper py-1 px-4 d-flex align-items-center justify-content-end border-bottom border-dark"
+				  >
+					<ul
+					  class="d-flex align-items-center justify-content-end gap-2 text-white"
+					>
+					  <li>
+						<a href="stores.html" class="text-white px-2 text-uppercase"
+						  >Stores</a
+						>
+					  </li>
+					  <li>
+						<a href="contact.html" class="text-white px-2 text-uppercase"
+						  >Contact Us</a
+						>
+					  </li>
+					  <li>
+						<a href="#" class="text-white px-2 text-uppercase">Ar/en</a>
+					  </li>
+					</ul>
+				  </div>
+				  <div
+					class="lower px-4 flex-grow-1 d-flex align-items-center justify-content-between"
+				  >
+					<ul
+					  class="d-flex align-items-center justify-content-start text-white text-uppercase"
+					>
+					<li class="dropdown"><a href="about.html" class="text-white px-2 ">about us</a>
+						<ul class="dropdown-menu p-4">
+						
+							<li><a href="prouduction.html" class="text-white d-inline-block p-2 text-uppercas">our production</a></li>
+						</ul>
+					</li>
+					  <li class="dropdown">
+						<a href="#" class="text-white px-2 ">our coffee</a>
+						<ul class="dropdown-menu p-4">
+							<li class="h6 text-white border-bottom border-white py-2 mb-2 text-uppercase">Coffee lab farms</li>
+							<li><a href="brazil.html" class="text-white d-inline-block p-2 text-uppercas">Brazil</a></li>
+							<li><a href="kenya.html" class="text-white d-inline-block p-2 text-uppercas">Kenya</a></li>
+							<li><a href="ethiopia.html" class="text-white d-inline-block p-2 text-uppercas">Ethiopia</a></li>
+							<li><a href="guatemala.html" class="text-white d-inline-block p-2 text-uppercas">Guatemala</a></li>
+						  </ul>
+					  </li>
+					  <li>
+						<a href="catalog.html" class="text-white px-2">catalog</a>
+					  </li>
+					  <li>
+						<a href="retail.html" class="text-white px-2">retail</a>
+					  </li>
+					  <li>
+						<a href="franchise.html" class="text-white px-2">franchise</a>
+					  </li>
+					  <li>
+						<a href="blog.html" class="text-white px-2">blog</a>
+					  </li>
+					</ul>
+					<div
+					  class="search d-flex align-items-center justify-content-center"
+					>
+					  <a href="#"
+						><i class="fa-solid fa-search fa-2x" style="color: #0170b9"></i
+					  ></a>
+					</div>
+				  </div>
+				</div>
+				
+			  </div>
 			<!-- Content-->
 			<div class="md-content">
 				<div class="consult-projectDetail">

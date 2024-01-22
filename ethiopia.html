@@ -52,10 +52,61 @@
 
   <body>
     <div class="page-wrap">
-      <div
-        class="header d-flex align-items-center justify-content-center py-3"
-        style="background-color: #071d49"
-      >
+      <header class="header header__style-02" id="mobileNav" style="background-color: #071d49;">
+        <div class="container" >
+          <div class="header__logo"><a href="index.html"><img src="assets/logo.png" width="75" height="88" alt="CofeeLab Logo"/></a></div>
+          
+          
+          <!-- consult-nav -->
+          <nav class="consult-nav">
+            
+            <!-- consult-menu -->
+            <ul class="consult-menu" style="background-color: #071d49;">
+              <li class="current-menu-item"><a href="index.html">Home</a>
+              </li>
+              <li class="menu-item-has-children"><a href="about.html">about us</a>
+                <ul class="sub-menu">
+                  <li><a href="prouduction.html">our production </a>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li class="menu-item-has-children"><a href="#">our coffee</a>
+                <ul class="sub-menu">
+                  <li><a href="brazil.html">Coffee lab farms</a>
+                  </li>
+                  <li><a href="kenya.html">Brazil</a>
+                  </li>
+                  <li><a href="ethiopia.html">Kenya</a>
+                  </li>
+                  <li><a href="guatemala.html">Ethiopia</a>
+                  </li>
+                  <li><a href="guatemala.html">Guatemala</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="catalog.html">catalog</a>
+              </li>
+              <li><a href="retail.html">retail</a>
+              </li>
+            
+              
+              <li><a href="franchise.html">franchise</a>
+              </li>
+              <li><a href="blog.html">blog</a>
+              </li>
+            </ul><!-- consult-menu -->
+            
+            <div class="navbar-toggle"><span></span><span></span><span></span></div>
+          </nav><!-- End / consult-nav -->
+          
+        </div>
+      </header>
+      <div id="DesktopNav"
+        class="header"
+        style="background-color: #071d49;"
+    
+        >
         <a href="index.html" class="d-block logo px-3"
           ><img width="75" height="88" src="assets/img/logo.png"
         /></a>
@@ -63,427 +114,72 @@
           class="nav flex-grow-1 align-self-stretch pages d-flex flex-column"
         >
           <div
-            class="upper py-1 px-4 d-flex align-items-center justify-content-end border-bottom border-dark"
+          class="upper py-1 px-4 d-flex align-items-center justify-content-end border-bottom border-dark"
           >
-            <ul
-              class="d-flex align-items-center justify-content-end gap-2 text-white"
+          <ul
+            class="d-flex align-items-center justify-content-end gap-2 text-white"
+          >
+            <li>
+            <a href="stores.html" class="text-white px-2 text-uppercase"
+              >Stores</a
             >
-              <li>
-                <a href="stores.html" class="text-white px-2 text-uppercase"
-                  >Stores</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="text-white px-2 text-uppercase"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-white px-2 text-uppercase">Ar/en</a>
-              </li>
-            </ul>
+            </li>
+            <li>
+            <a href="contact.html" class="text-white px-2 text-uppercase"
+              >Contact Us</a
+            >
+            </li>
+            <li>
+            <a href="#" class="text-white px-2 text-uppercase">Ar/en</a>
+            </li>
+          </ul>
           </div>
           <div
-            class="lower px-4 flex-grow-1 d-flex align-items-center justify-content-between"
+          class="lower px-4 flex-grow-1 d-flex align-items-center justify-content-between"
           >
-            <ul
-              class="d-flex align-items-center justify-content-start text-white text-uppercase"
-            >
-            <li class="menu-item-has-children"><a href="about.html">about us</a>
-              <ul class="sub-menu">
-                <li><a href="our-prouduction.html">our-production </a>
-                </li>
-                
+          <ul
+            class="d-flex align-items-center justify-content-start text-white text-uppercase"
+          >
+          <li class="dropdown"><a href="about.html" class="text-white px-2 ">about us</a>
+            <ul class="dropdown-menu p-4">
+            
+              <li><a href="prouduction.html" class="text-white d-inline-block p-2 text-uppercas">our production</a></li>
+            </ul>
+          </li>
+            <li class="dropdown">
+            <a href="#" class="text-white px-2 ">our coffee</a>
+            <ul class="dropdown-menu p-4">
+              <li class="h6 text-white border-bottom border-white py-2 mb-2 text-uppercase">Coffee lab farms</li>
+              <li><a href="brazil.html" class="text-white d-inline-block p-2 text-uppercas">Brazil</a></li>
+              <li><a href="kenya.html" class="text-white d-inline-block p-2 text-uppercas">Kenya</a></li>
+              <li><a href="ethiopia.html" class="text-white d-inline-block p-2 text-uppercas">Ethiopia</a></li>
+              <li><a href="guatemala.html" class="text-white d-inline-block p-2 text-uppercas">Guatemala</a></li>
               </ul>
             </li>
-              <li class="dropdown">
-                                <a href="#" class="text-white px-2 ">our coffee <i class="fas fa-angle-down"></i></a>
-
-                <ul class="dropdown-menu p-4">
-					<li class="h6 text-white border-bottom border-white py-2 mb-2 text-uppercase">Coffee lab farms</li>
-					<li><a href="brazil.html" class="text-white d-inline-block p-2 text-uppercas">Brazil</a></li>
-					<li><a href="kenya.html" class="text-white d-inline-block p-2 text-uppercas">Kenya</a></li>
-					<li><a href="ethiopia.html" class="text-white d-inline-block p-2 text-uppercas">Ethiopia</a></li>
-					<li><a href="guatemala.html" class="text-white d-inline-block p-2 text-uppercas">Guatemala</a></li>
-				  </ul>
-              </li>
-              <li>
-                <a href="catalog.html" class="text-white px-2">catalog</a>
-              </li>
-              <li>
-                <a href="retail.html" class="text-white px-2">retail</a>
-              </li>
-              <li>
-                <a href="franchise.html" class="text-white px-2">franchise</a>
-              </li>
-              <li>
-                <a href="blog.html" class="text-white px-2">blog</a>
-              </li>
-            </ul>
-            <div
-              class="search d-flex align-items-center justify-content-center"
-            >
-              <a href="#"
-                ><i class="fa-solid fa-search fa-2x" style="color: #0170b9"></i
-              ></a>
-            </div>
+            <li>
+            <a href="catalog.html" class="text-white px-2">catalog</a>
+            </li>
+            <li>
+            <a href="retail.html" class="text-white px-2">retail</a>
+            </li>
+            <li>
+            <a href="franchise.html" class="text-white px-2">franchise</a>
+            </li>
+            <li>
+            <a href="blog.html" class="text-white px-2">blog</a>
+            </li>
+          </ul>
+          <div
+            class="search d-flex align-items-center justify-content-center"
+          >
+            <a href="#"
+            ><i class="fa-solid fa-search fa-2x" style="color: #0170b9"></i
+            ></a>
+          </div>
           </div>
         </div>
-      </div>
-      <!-- Content-->
-      <div class="md-content">
-        <div class="container pt-5 country-name">
-            <div class="main-title position-relative mb-5">
-                <h3 class="fst-italic text-uppercase">Ethiopia</h3>
-            </div>
+        
         </div>
-        <div class="container overflow-hidden">
-            <div class="title">
-                <h4 class="py-4 mb-5 border-bottom border-dark text-center">MOPLACO
-                </h4>
-            </div>
-            <div class="farm row">
-                <div class="col-12 col-md-6 d-flex flex-column-reverse flex-md-column mb-3 mb-md-0">
-                    <div class="flex-grow-1 pic">
-                        <img src="./assets/imgs/aithiopia-stelios.jpg" alt="">
-                    </div>
-                    <div class="flex-grow-1 farm-facts">
-                        <h5>Farm Facts : </h5>
-                        <p><span style="color: #00aeef;">ORIGIN:</span> Ethiopia</p>
-                        <p><span style="color: #00aeef;">REGION:</span> Southwest Ethiopia (Djimmah) </p>
-                        <p><span style="color: #00aeef;">Exporter:</span> MoPlaCo </p>
-                        <p><span style="color: #00aeef;">ALTITUDE:</span> 1800-2000 m</p>
-                       
-         
-                        <p><span style="color: #00aeef;">PROCEDURE :</span>  Washed process </p>
-                        <p><span style="color: #00aeef;">VARIETY:</span> Heirloom</p>
-                        <p><span style="color: #00aeef;">CUTTING NOTES:</span> Very fruity, black tea and wine, liqueur, sweet.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d504205.23164806626!2d40.489989!3d9.145136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2sus!4v1705422991044!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-        </div>
-        <div class="container pt-5 overflow-hidden">
-            <div class="title">
-                <h4 class="py-4 mb-5 border-bottom border-dark text-center">About your grower</h4>
-            </div>
-            <div class="shape row">
-                <div class="col-12 col-md-6">
-                    <div>
-                        <h5>Cupping characteristics</h5>
-                        <p>Cup score: 85+</p>
-                    </div>
-                    <div>
-                        <img src="./assets/imgs/ETHIOPIA_ISTOS.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <p>Limu is a brand name for the medium-sized coffee beans that come from southwestern / south-central Ethiopia with a distinctive round shape and green color. The area is forested, has plenty of natural water and rich soil. With a similar environment but also cultivation conditions as the neighboring ones Yirgacheffe and Sidamo, this coffee has the same yellowish vibrancy and aromatic floral notes. This comes from Mrs. Eleanna Georgali, 4th generation producer. Eleanna has done an admirable job continuing her father’s legacy at Moplaco. Under its leadership, Moplaco is constantly evolving to produce increasing quality coffee, despite the complexity and challenges that Ethiopian producers are constantly facing.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container pt-5 overflow-hidden">
-            
-            <div class="pt-5">
-              <h5>Our official production process</h5>
-                <p>The production process of the unique origin of coffees emphasizes and evaluates the characteristics of our <span style="color: #00aeef;">terroir</span> Only coffees grown within the officially restricted area that follow the rules of the production process set by our board of directors may have the stamp of guaranteed origin and quality of the Djimmah area.</p>
-                <div class="boxes mt-5">
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon1.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">Farm production must be located within the delimited area of unique origin (cafes)</p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon2.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">
-                          Minimum Altitude 1800m reaching up to 2000m.</p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon3.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">Arabica is the official genre</p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon4.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">Minimum quality 80pts based on SCAA methodology</p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon5.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">The use of good practice and respect for the laws of Ethiopia. </p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon6.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">Coffee batches should only be stored in recognized cooperatives</p>
-                    </div>
-                    <div class="box mb-3 d-flex align-items-center flex-column flex-md-row">
-                        <img src="./assets/imgs/coffeelab-icon7.jpg" alt="">
-                        <p class="mb-3 mb-md-0 ms-0 ml-md-3">Only official coffee bags (packaging) marked with the stamp of guaranteed origin and quality should be used</p>
-                    </div>
-                </div>
-                <p class="py-5 border-bottom border-dark">
-                    ** terroir = So in theory, terroir is an umbrella term that combines all the different factors that affect wine: <span style="color: #00aeef;">the effect of climate, soil, topography, humidity, rainfall, sunshine, soil chemicals but also human intervention</span> in the cultivation of the vineyard when it is done in a traditional way that respects the ecosystem.
-                </p>
-            </div>
-        </div>
-        <!-- Section -->
-		<!-- <div s -->
-        <!-- End / Section -->
-      </div>
-      <!-- End / Content-->
-
-
-
-	  <!-- start insta section  -->
-	  <section class="md-section">
-		<div class="container">
-			<div class="grid-css grid-css--masonry" data-col-lg="3" data-col-md="2" data-col-sm="2" data-col-xs="1" data-gap="30">
-				<div class="row">
-					<div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2">
-						<!-- title-01 -->
-						<div class="title-01">
-							<h2 class="title-01__title d-flex flex-column justify-content-center align-items-center">
-								<div class="instagram-icon">
-									<div class="line"></div>
-									<i class="fab fa-instagram "></i>
-									<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram Icon" style="width: 24px; height: 24px;"> -->
-									<div class="line"></div>
-								</div>
-								FOLLOW US
-							</h2>
-						</div><!-- End / title-01 -->
-					</div>
-				</div>
-				
-				<div class="grid__inner">
-					<div class="grid-sizer"></div>
-					<div class="grid-item marketing">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<div class="post-02__media">
-										<!-- <a href="project-detail.html"><img src="assets/img/projects/1.jpg" alt=""/></a> -->
-										<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-											<source src="assets/video/1.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-									
-									</div>
-									
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-				
-					<div class="grid-item strategy">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item marketing">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item online-marketing">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item online-marketing">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item seo-optimization">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item corporate-finance">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item corporate-finance">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-					<div class="grid-item corporate-finance seo-optimization">
-						<div class="grid-item__inner">
-							<div class="grid-item__content-wrapper">
-								
-								<!-- post-02 -->
-								<div class="post-02">
-									<video controls width="100%" height="400" poster="assets/img/projects/1.png" autoplay loop muted>
-										<source src="assets/video/1.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-								
-								</div><!-- End / post-02 -->
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="text-center" ><a style="background-color: #071d49;" class="btn btn-primary btn-w180" href="https://www.instagram.com/coffeelabgr/" target="_blank">View on Instagram</a></div>
-		</div>
-	</section>
-	  <!-- end insta section  -->
-
-    <footer class="footer ">
-			<div class="upper  py-2 ">
-				<div class="container d-flex justify-content-center align-items-center">
-					<a href="https://www.facebook.com/CoffeeLabGR" target="_blank" class="px-3"><i class="fab fa-facebook fa-2x"></i></a>
-					<a href="https://www.instagram.com/coffeelabgr/" target="_blank" class="px-3"><i class="fab fa-instagram  fa-2x"></i></a>
-					<a href="#" class="logo px-3 d-block"><img width="90" height="88" src="./assets/imgs/logo.png"></a>
-					<a href="https://www.youtube.com/channel/UComQVDIqNTc2EWWE_34v1Kg" target="_blank" class="px-3"><i class="fab fa-youtube  fa-2x"></i></a>
-					<a href="https://www.linkedin.com/company/coffeelab-gr" target="_blank" class="px-3"><i class="fab fa-linkedin-in  fa-2x"></i></a>
-				</div>
-			</div>
-			<div class="lower text-white pt-5">
-				<div class="container">
-
-					<div class="row  border-secondary">
-						<div class="links col-12 col-md-6 col-xl-2 mb-4 h5">
-							<a href="#" class="d-block text-white h5 pb-3">About Us</a>
-							<a href="#" class="d-block text-white h5 pb-3">Careers</a>
-							<a href="#" class="d-block text-white h5 pb-3">Stores</a>
-							<a href="#" class="d-block text-white h5 pb-3">Contact Us</a>
-						</div>
-						<div class="col-12 col-md-6 col-xl-3 mb-4 central">
-							<h3 class="text-white pb-4">Central</h3>
-							<div class="info h6" style="
-							margin-top: -20px;
-						">
-								<p class="h6 pb-3"><a class="h6 d-inline-block">Kyprou 10, Moschato, 18346</a></p>
-								<p class="h6 pb-3"> Phone: <a class="h6 d-inline-block mx-1">216 8004940</a></p>
-								<p class="h6 pb-3"> Email: <a class="h6 d-inline-block mx-1">info@coffeelab.gr</a></p>
-							</div>
-						</div>
-						<div
-							class="col-12 col-md-5 col-xl-3 mb-4 b2b text-start d-flex flex-column align-items-start">
-							<!-- <a class="btn btn-secondary px-3 py-2 text-decoration-none mb-4" style="
-							margin-left: 15%;
-						">B2B Login</a> -->
-							<img src="./assets/imgs/Member-of-GS1-Association-Greece_logo.jpg"
-								alt="Member of GS1 Association Greece logo">
-						</div>
-						<div class="euro col-12 col-md-7 col-xl-4 mb-4 d-flex align-items-center">
-							<img src="./assets/imgs/EURO_AWARD-1-1-2048x2048.png" alt="EURO AWARD image" class=" px-3">
-							<p class="h5" style="
-							font-size: 16px;
-							font-weight: 500;
-						">EUROPEAN COFFEE AWARDS 2023
-								COFFEE LAB
-								BEST COFFEE CHAIN
-								SOUTHERN EUROPE</p>
-						</div>
-					</div>
-
-					<div class="row  text-center">
-						<div class="col-12 col-md-4 align-self-end mb-2">&copy;Copyright 2023 - Coffeelab - ΓΕΜΗ
-							149377702000</div>
-						<div class="col-12 col-md-4 align-self-end mb-2 d-flex flex-column align-items-center terms">
-							<img src="./assets/imgs/cards_accepted.png" alt="cards accepted image" class="w-75">
-							<div class="fs-1 mb-0">
-								<a href="#" class="fs-1 text-secondary d-inline-block px-2">Privacy Policy</a> |
-								<a href="#" class="h6 text-secondary d-inline-block px-2">Cookie Policy</a> |
-								<a href="#" class="h6 text-secondary d-inline-block px-2">Terms Of Use</a>
-							</div>
-						</div>
-						<div class="col-12 col-md-4 align-self-end mb-2">
-							Handcrafted by
-							
-							<a href="https://meta-itech.com/"><img src="assets/img/meta.png" alt="netsteps logo" style="
-								width: 67px;
-							"/></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-    </div>
     <!-- Vendors-->
     <script
       type="text/javascript"
@@ -543,5 +239,133 @@
     ></script>
     <!-- App-->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      // Get the modal
+    
+  
+  
+  // 		let modal = document.getElementById("myModal");
+  
+  // // Get the image and insert it inside the modal - use its "alt" text as a caption
+  // let img = document.getElementById("myImg");
+  // let modalImg = document.getElementById("img01");
+  // let captionText = document.getElementById("caption");
+  
+  // var handleImgClick = function () {
+  //         console.log("test");
+  //         modal.style.display = "block";
+    
+  //     };
+  
+  //     // Add click event listener for the image
+  //     img.addEventListener("click", handleImgClick);
+  //     // Also add touchstart event listener for mobile
+  //     img.addEventListener("touchstart", handleImgClick);
+  
+  
+  
+  
+  // // Get the <span> element that closes the modal
+  // let span = document.getElementsByClassName("close")[0];
+  
+  // // When the user clicks on <span> (x), close the modal
+  // span.onclick = function () {
+  //   modal.style.display = "none";
+  // };
+  
+  // Close the modal when the user clicks outside of the modal content
+  // window.onclick = function (event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // };
+  const modal = document.querySelector(".my-modal");
+    const buttons = document.querySelectorAll(".my-modal .content button");
+    
+    function openModal() {
+      modal.style.display = "block";
+    }
+  
+    function closeModal() {
+      modal.style.display = "none";
+  
+    }
+  //   window.addEventListener("keyup", (e) => {
+  // 	  if(e.key === "t") {
+  // 		openModal()
+  // 	  }
+  //   })
+    
+    buttons.forEach(b => b.addEventListener("click", (e) => {
+    closeModal()
+    }));
+  
+  
+  
+  
+  
+    let currentImg = 1;
+  let imgs = Array.from(document.querySelectorAll(".imgs .img"));
+  let numberOfImgs = imgs.length;
+  let prevBtn = document.querySelector(".prev");
+  let nextBtn = document.querySelector(".next");
+  let imgOrder = document.querySelector('.img-order');
+  
+  prevBtn.onclick = prevImg;
+  nextBtn.onclick = nextImg;
+  
+  
+  
+  changeActive();
+  
+  window.addEventListener("click", function() {
+      check();
+  });
+  
+  function check() {
+      if(currentImg == 1) {
+          prevBtn.classList.add("disabled");
+      } else {
+          prevBtn.classList.remove("disabled");
+      }
+      if(currentImg == numberOfImgs) {
+          nextBtn.classList.add("disabled");
+      } else {
+          nextBtn.classList.remove("disabled");
+      }
+      hideAll();
+      changeActive();
+  }
+  
+  function openImage(id) {
+    currentImg = id;
+    openModal()
+    check();
+  }
+  
+  function nextImg () {
+      if(currentImg == imgs.length) return;
+      else currentImg++;
+  }
+  
+  function prevImg () {
+      if(currentImg == 1) return;
+      else currentImg--;
+  }
+  
+  function hideAll() {
+      imgs.forEach(img => {
+          img.classList.remove("active");
+      });
+  }
+  
+  
+  function changeActive() {
+      imgs[currentImg - 1].classList.add("active");
+      imgOrder.textContent = currentImg;
+  }
+      
+    
+      </script>
   </body>
 </html>

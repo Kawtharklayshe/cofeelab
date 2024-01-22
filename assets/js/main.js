@@ -277,18 +277,33 @@
 	/**
 	 * Menu
 	 */
-	$('.consult-nav').dropdownMenu({
-		menuClass: 'consult-menu',
-		breakpoint: 992,
-		toggleClass: 'active',
-		classButtonToggle: 'navbar-toggle',
-		subMenu: {
-			class: 'sub-menu',
-			parentClass: 'menu-item-has-children',
-			toggleClass: 'active'
-		}
-	});
+	// $('.consult-nav').dropdownMenu({
+	// 	menuClass: 'consult-menu',
+	// 	breakpoint: 992,
+	// 	toggleClass: 'active',
+	// 	classButtonToggle: 'navbar-toggle',
+	// 	subMenu: {
+	// 		class: 'sub-menu',
+	// 		parentClass: 'menu-item-has-children',
+	// 		toggleClass: 'active'
+	// 	}
+	// });
 	
+
+	const menu = document.querySelector('.consult-nav');
+const dropdown = document.querySelector('.consult-menu');
+
+menu.addEventListener('click', function() {
+  if (window.innerWidth < 992) {
+    dropdown.classList.toggle('active');
+  }
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 992) {
+    dropdown.classList.remove('active');
+  }
+});
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > 100) {
 			$('.header').addClass('shrink');

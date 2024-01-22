@@ -4535,11 +4535,11 @@ mark, .mark {
     }
 
     .consult-nav .consult-menu a:hover {
-        color: #071d49;
+        color: #fff;
     }
 
     .consult-nav .consult-menu .active > a {
-        color: #071d49;
+        color: #fff;
     }
 
     .consult-nav .consult-menu .current-menu-parent > a,
